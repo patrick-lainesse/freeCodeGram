@@ -19,10 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3696122a-efb7-4270-9655-19cfb6f883b5" name="Default Changelist" comment="feat: Login page mockup&#10;&#10;Also added and integrated username attribute to the database in home, app, user model and migration">
+    <list default="true" id="3696122a-efb7-4270-9655-19cfb6f883b5" name="Default Changelist" comment="feat: Changed home route for profile route">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -183,7 +181,7 @@
       <workItem from="1596725027682" duration="751000" />
       <workItem from="1596725828353" duration="1277000" />
       <workItem from="1596727141225" duration="4582000" />
-      <workItem from="1596745221092" duration="5238000" />
+      <workItem from="1596745221092" duration="5854000" />
     </task>
     <task id="LOCAL-00001" summary="feat: Login page mockup&#10;&#10;Also added and integrated username attribute to the database in home, app, user model and migration">
       <created>1596810506645</created>
@@ -192,7 +190,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596810506645</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="feat: Changed home route for profile route">
+      <created>1596812747477</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1596812747477</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -211,7 +216,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat: Login page mockup&#10;&#10;Also added and integrated username attribute to the database in home, app, user model and migration" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: Login page mockup&#10;&#10;Also added and integrated username attribute to the database in home, app, user model and migration" />
+    <MESSAGE value="feat: Changed home route for profile route" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: Changed home route for profile route" />
   </component>
   <component name="WindowStateProjectService">
     <state x="490" y="312" width="300" height="207" key="Github.ShareDialog" timestamp="1596728593730">
@@ -226,9 +232,9 @@
       <screen x="0" y="25" width="1280" height="775" />
     </state>
     <state x="174" y="47" width="932" height="737" key="SettingsEditor/0.25.1280.775@0.25.1280.775" timestamp="1596745145341" />
-    <state x="235" y="148" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1596810511967">
+    <state x="235" y="148" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1596812749820">
       <screen x="0" y="25" width="1280" height="775" />
     </state>
-    <state x="235" y="148" width="800" height="535" key="Vcs.Push.Dialog.v2/0.25.1280.775@0.25.1280.775" timestamp="1596810511967" />
+    <state x="235" y="148" width="800" height="535" key="Vcs.Push.Dialog.v2/0.25.1280.775@0.25.1280.775" timestamp="1596812749820" />
   </component>
 </project>
