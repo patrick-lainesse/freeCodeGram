@@ -24,9 +24,19 @@ class PostsController extends Controller
            'image' => ['required', 'image']
         ]);
 
-        // Tells Laravel to fetch the user ID that is posting this picture
-        auth()->user()->posts()->create($data);
+        /* Stores the picture in the public directory. Could use a driver instead of 'public' (s3, for example) to store on Amazon
+            Takes care of all the moving files code in PHP in a single line! */
+        $imagePath = request('image')->store('uploads', 'public');
 
-        dd(request()->all());
+        // Tells Laravel to fetch the user ID that is posting this picture
+        auth()->user()->posts()->create([
+            'caption' => $data['caption'],
+            'image' => $imagePath
+        ]);
+
+        // Die and dump, to return all the data on the page
+        //dd(request()->all());
+
+        return redirect('/profile/' . auth()->user()->id);
     }
 }

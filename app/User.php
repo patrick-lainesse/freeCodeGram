@@ -40,7 +40,7 @@ class User extends Authenticatable
     // If we put post to plural, it implies a many relation
     public function posts()
     {
-        return $this->hasMany(Post::class);
+        return $this->hasMany(Post::class)->orderBy('created_at', 'DESC');
     }
 
     public function profile()
