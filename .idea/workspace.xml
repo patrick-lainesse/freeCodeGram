@@ -19,11 +19,17 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3696122a-efb7-4270-9655-19cfb6f883b5" name="Default Changelist" comment="feat: Added handling of posts and validation&#10;&#10;- Now needs to be logged in to do a post&#10;- Validates that an image file and caption have been added to the post">
+    <list default="true" id="3696122a-efb7-4270-9655-19cfb6f883b5" name="Default Changelist" comment="feat: Image storage in public directory&#10;&#10;- Uploaded pictures are displayed on a user profile in descending order&#10;- Number of posts calculated and displayed on the profile page">
+      <change afterPath="$PROJECT_DIR$/resources/views/posts/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/freeCodeGram.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/freeCodeGram.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PostsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PostsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/profiles/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/profiles/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,6 +146,7 @@
       <path value="$PROJECT_DIR$/vendor/league/flysystem" />
       <path value="$PROJECT_DIR$/vendor/nesbot/carbon" />
       <path value="$PROJECT_DIR$/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/vendor/intervention/image" />
     </include_path>
   </component>
   <component name="ProjectId" id="1fjILHpHWwim0VEdC8nDRZY3KS9" />
@@ -191,7 +198,7 @@
       <workItem from="1596725027682" duration="751000" />
       <workItem from="1596725828353" duration="1277000" />
       <workItem from="1596727141225" duration="4582000" />
-      <workItem from="1596745221092" duration="13114000" />
+      <workItem from="1596745221092" duration="14803000" />
     </task>
     <task id="LOCAL-00001" summary="feat: Login page mockup&#10;&#10;Also added and integrated username attribute to the database in home, app, user model and migration">
       <created>1596810506645</created>
@@ -242,7 +249,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596823774599</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="feat: Image storage in public directory&#10;&#10;- Uploaded pictures are displayed on a user profile in descending order&#10;- Number of posts calculated and displayed on the profile page">
+      <created>1596825028668</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1596825028669</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -268,7 +282,8 @@
     <MESSAGE value="feat: Profile model integration in profile page" />
     <MESSAGE value="feat: Added Posts Model&#10;&#10;Including:&#10;- PostsController&#10;- View first steps&#10;- Migration for database&#10;- Links with other models" />
     <MESSAGE value="feat: Added handling of posts and validation&#10;&#10;- Now needs to be logged in to do a post&#10;- Validates that an image file and caption have been added to the post" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: Added handling of posts and validation&#10;&#10;- Now needs to be logged in to do a post&#10;- Validates that an image file and caption have been added to the post" />
+    <MESSAGE value="feat: Image storage in public directory&#10;&#10;- Uploaded pictures are displayed on a user profile in descending order&#10;- Number of posts calculated and displayed on the profile page" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: Image storage in public directory&#10;&#10;- Uploaded pictures are displayed on a user profile in descending order&#10;- Number of posts calculated and displayed on the profile page" />
   </component>
   <component name="WindowStateProjectService">
     <state x="490" y="312" width="300" height="207" key="Github.ShareDialog" timestamp="1596728593730">
@@ -283,13 +298,13 @@
       <screen x="0" y="25" width="1280" height="775" />
     </state>
     <state x="174" y="47" width="932" height="737" key="SettingsEditor/0.25.1280.775@0.25.1280.775" timestamp="1596745145341" />
-    <state x="235" y="148" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1596823776590">
+    <state x="235" y="148" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1596825030526">
       <screen x="0" y="25" width="1280" height="775" />
     </state>
-    <state x="235" y="148" width="800" height="535" key="Vcs.Push.Dialog.v2/0.25.1280.775@0.25.1280.775" timestamp="1596823776590" />
-    <state x="303" y="121" width="672" height="678" key="search.everywhere.popup" timestamp="1596824737332">
+    <state x="235" y="148" width="800" height="535" key="Vcs.Push.Dialog.v2/0.25.1280.775@0.25.1280.775" timestamp="1596825030526" />
+    <state x="303" y="121" width="672" height="678" key="search.everywhere.popup" timestamp="1596912952808">
       <screen x="0" y="25" width="1280" height="775" />
     </state>
-    <state x="303" y="121" width="672" height="678" key="search.everywhere.popup/0.25.1280.775@0.25.1280.775" timestamp="1596824737332" />
+    <state x="303" y="121" width="672" height="678" key="search.everywhere.popup/0.25.1280.775@0.25.1280.775" timestamp="1596912952808" />
   </component>
 </project>

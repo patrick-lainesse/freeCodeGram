@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Intervention\Image\Facades\Image;
 
 class PostsController extends Controller
 {
@@ -28,6 +29,10 @@ class PostsController extends Controller
             Takes care of all the moving files code in PHP in a single line! */
         $imagePath = request('image')->store('uploads', 'public');
 
+    // composer require intervention/image to use Intervention\Image class and make the image fit to these dimensions (cut the excess)
+        $image = Image::make(public_path("storage/{$imagePath}"))->fit(1200, 1200);
+        $image->save();
+
         // Tells Laravel to fetch the user ID that is posting this picture
         auth()->user()->posts()->create([
             'caption' => $data['caption'],
@@ -38,5 +43,16 @@ class PostsController extends Controller
         //dd(request()->all());
 
         return redirect('/profile/' . auth()->user()->id);
+    }
+
+    /* If we pass the model as a parameter as well, Laravel will show the entire post instead of only its id
+        (and it also automatically do a findOrFail) */
+    public function show(\App\Post $post)
+    {
+        return view('posts.show', compact('post'));
+        /* is the same thing as:
+        return view('posts.show', [
+            'post' => $post
+        ]);*/
     }
 }
