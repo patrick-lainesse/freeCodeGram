@@ -19,12 +19,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3696122a-efb7-4270-9655-19cfb6f883b5" name="Default Changelist" comment="feat: Edit Profile page&#10;&#10;- added authorised protection to edit profile&#10;- added autofilling of fields from current profile data">
-      <change afterPath="$PROJECT_DIR$/app/Policies/ProfilePolicy.php" afterDir="false" />
+    <list default="true" id="3696122a-efb7-4270-9655-19cfb6f883b5" name="Default Changelist" comment="feat: Profile policy&#10;&#10;Only a registered user can make changes to his own profile and add posts on his own page">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProfilesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProfilesController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_08_07_150802_create_profiles_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_08_07_150802_create_profiles_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/posts/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/posts/show.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/profiles/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/profiles/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -194,7 +195,7 @@
       <workItem from="1596725027682" duration="751000" />
       <workItem from="1596725828353" duration="1277000" />
       <workItem from="1596727141225" duration="4582000" />
-      <workItem from="1596745221092" duration="18536000" />
+      <workItem from="1596745221092" duration="20802000" />
     </task>
     <task id="LOCAL-00001" summary="feat: Login page mockup&#10;&#10;Also added and integrated username attribute to the database in home, app, user model and migration">
       <created>1596810506645</created>
@@ -266,7 +267,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597073748240</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="feat: Profile policy&#10;&#10;Only a registered user can make changes to his own profile and add posts on his own page">
+      <created>1597074633394</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1597074633394</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -295,9 +303,14 @@
     <MESSAGE value="feat: Image storage in public directory&#10;&#10;- Uploaded pictures are displayed on a user profile in descending order&#10;- Number of posts calculated and displayed on the profile page" />
     <MESSAGE value="feat: Route to show a specific post" />
     <MESSAGE value="feat: Edit Profile page&#10;&#10;- added authorised protection to edit profile&#10;- added autofilling of fields from current profile data" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: Edit Profile page&#10;&#10;- added authorised protection to edit profile&#10;- added autofilling of fields from current profile data" />
+    <MESSAGE value="feat: Profile policy&#10;&#10;Only a registered user can make changes to his own profile and add posts on his own page" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: Profile policy&#10;&#10;Only a registered user can make changes to his own profile and add posts on his own page" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="373" y="170" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1597074815668">
+      <screen x="0" y="25" width="1280" height="775" />
+    </state>
+    <state x="373" y="170" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.25.1280.775@0.25.1280.775" timestamp="1597074815668" />
     <state x="490" y="312" width="300" height="207" key="Github.ShareDialog" timestamp="1596728593730">
       <screen x="0" y="25" width="1280" height="775" />
     </state>
@@ -310,17 +323,17 @@
       <screen x="0" y="25" width="1280" height="775" />
     </state>
     <state x="174" y="47" width="932" height="737" key="SettingsEditor/0.25.1280.775@0.25.1280.775" timestamp="1596745145341" />
-    <state x="446" y="331" width="378" height="170" key="VCS.ChangelistChooser" timestamp="1597072311868">
+    <state x="446" y="331" width="378" height="170" key="VCS.ChangelistChooser" timestamp="1597074758492">
       <screen x="0" y="25" width="1280" height="775" />
     </state>
-    <state x="446" y="331" width="378" height="170" key="VCS.ChangelistChooser/0.25.1280.775@0.25.1280.775" timestamp="1597072311868" />
-    <state x="235" y="148" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1597073749232">
+    <state x="446" y="331" width="378" height="170" key="VCS.ChangelistChooser/0.25.1280.775@0.25.1280.775" timestamp="1597074758492" />
+    <state x="235" y="148" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1597074635471">
       <screen x="0" y="25" width="1280" height="775" />
     </state>
-    <state x="235" y="148" width="800" height="535" key="Vcs.Push.Dialog.v2/0.25.1280.775@0.25.1280.775" timestamp="1597073749232" />
-    <state x="303" y="121" width="672" height="678" key="search.everywhere.popup" timestamp="1597072324438">
+    <state x="235" y="148" width="800" height="535" key="Vcs.Push.Dialog.v2/0.25.1280.775@0.25.1280.775" timestamp="1597074635471" />
+    <state x="303" y="121" width="672" height="678" key="search.everywhere.popup" timestamp="1597076075028">
       <screen x="0" y="25" width="1280" height="775" />
     </state>
-    <state x="303" y="121" width="672" height="678" key="search.everywhere.popup/0.25.1280.775@0.25.1280.775" timestamp="1597072324438" />
+    <state x="303" y="121" width="672" height="678" key="search.everywhere.popup/0.25.1280.775@0.25.1280.775" timestamp="1597076075028" />
   </component>
 </project>

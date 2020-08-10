@@ -4,9 +4,7 @@
     <div class="container">
         <div class="row">
             <div class="col-3 p-5">
-                <img
-                    src="https://instagram.fyhu2-1.fna.fbcdn.net/v/t51.2885-19/s150x150/97566921_2973768799380412_5562195854791540736_n.jpg?_nc_ht=instagram.fyhu2-1.fna.fbcdn.net&amp;_nc_ohc=LFHchPCFeR0AX_jYfOT&amp;oh=c94ec2a2f75789c25cee3aa04abcdb56&amp;oe=5F56A067"
-                    class="rounded-circle" alt="freeCodeCamp logo">
+                <img src="/storage/{{ $user->profile->image }}" class="rounded-circle w-100" alt="freeCodeCamp logo">
             </div>
             <div class="col-9 pt-5">
                 <div class="d-flex justify-content-between align-items-baseline">
