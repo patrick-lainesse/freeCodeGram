@@ -19,9 +19,10 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/p/{post}', 'PostsController@show');
+/*Need to be careful with the order you put your route: /p/{post} cancels /p/create if placed before*/
 Route::get('/p/create', 'PostsController@create');
 Route::post('/p', 'PostsController@store');
+Route::get('/p/{post}', 'PostsController@show');
 
 Route::get('/profile/{user}', 'ProfilesController@index')->name('profile.show');
 Route::get('/profile/{user}/edit', 'ProfilesController@edit')->name('profile.edit');

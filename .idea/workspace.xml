@@ -19,11 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3696122a-efb7-4270-9655-19cfb6f883b5" name="Default Changelist" comment="feat: Route to show a specific post">
-      <change afterPath="$PROJECT_DIR$/resources/views/profiles/edit.blade.php" afterDir="false" />
+    <list default="true" id="3696122a-efb7-4270-9655-19cfb6f883b5" name="Default Changelist" comment="feat: Edit Profile page&#10;&#10;- added authorised protection to edit profile&#10;- added autofilling of fields from current profile data">
+      <change afterPath="$PROJECT_DIR$/app/Policies/ProfilePolicy.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProfilesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProfilesController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Profile.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/profiles/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/profiles/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
@@ -195,7 +194,7 @@
       <workItem from="1596725027682" duration="751000" />
       <workItem from="1596725828353" duration="1277000" />
       <workItem from="1596727141225" duration="4582000" />
-      <workItem from="1596745221092" duration="17733000" />
+      <workItem from="1596745221092" duration="18536000" />
     </task>
     <task id="LOCAL-00001" summary="feat: Login page mockup&#10;&#10;Also added and integrated username attribute to the database in home, app, user model and migration">
       <created>1596810506645</created>
@@ -260,7 +259,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596913591620</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="feat: Edit Profile page&#10;&#10;- added authorised protection to edit profile&#10;- added autofilling of fields from current profile data">
+      <created>1597073748240</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1597073748240</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -288,7 +294,8 @@
     <MESSAGE value="feat: Added handling of posts and validation&#10;&#10;- Now needs to be logged in to do a post&#10;- Validates that an image file and caption have been added to the post" />
     <MESSAGE value="feat: Image storage in public directory&#10;&#10;- Uploaded pictures are displayed on a user profile in descending order&#10;- Number of posts calculated and displayed on the profile page" />
     <MESSAGE value="feat: Route to show a specific post" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: Route to show a specific post" />
+    <MESSAGE value="feat: Edit Profile page&#10;&#10;- added authorised protection to edit profile&#10;- added autofilling of fields from current profile data" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: Edit Profile page&#10;&#10;- added authorised protection to edit profile&#10;- added autofilling of fields from current profile data" />
   </component>
   <component name="WindowStateProjectService">
     <state x="490" y="312" width="300" height="207" key="Github.ShareDialog" timestamp="1596728593730">
@@ -307,10 +314,10 @@
       <screen x="0" y="25" width="1280" height="775" />
     </state>
     <state x="446" y="331" width="378" height="170" key="VCS.ChangelistChooser/0.25.1280.775@0.25.1280.775" timestamp="1597072311868" />
-    <state x="235" y="148" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1596913593643">
+    <state x="235" y="148" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1597073749232">
       <screen x="0" y="25" width="1280" height="775" />
     </state>
-    <state x="235" y="148" width="800" height="535" key="Vcs.Push.Dialog.v2/0.25.1280.775@0.25.1280.775" timestamp="1596913593643" />
+    <state x="235" y="148" width="800" height="535" key="Vcs.Push.Dialog.v2/0.25.1280.775@0.25.1280.775" timestamp="1597073749232" />
     <state x="303" y="121" width="672" height="678" key="search.everywhere.popup" timestamp="1597072324438">
       <screen x="0" y="25" width="1280" height="775" />
     </state>

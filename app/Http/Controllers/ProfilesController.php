@@ -15,11 +15,14 @@ class ProfilesController extends Controller
     // Since we are importing App\User, we can replace \App\User $user with User $user
     public function edit(User $user)
     {
+        $this->authorize('update', $user->profile);
         return view('profiles.edit', compact('user'));
     }
 
     public function update(User $user)
     {
+        $this->authorize('update', $user->profile);
+
         // validation
         $data = request()->validate([
            'title' => 'required',
