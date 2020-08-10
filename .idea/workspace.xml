@@ -19,12 +19,18 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3696122a-efb7-4270-9655-19cfb6f883b5" name="Default Changelist" comment="feat: Profile image&#10;&#10;- Changed the profile image to be the one that is updated by the user in index as well as in posts by that user">
+    <list default="true" id="3696122a-efb7-4270-9655-19cfb6f883b5" name="Default Changelist" comment="feat: Profile image update&#10;&#10;- When a user creates a new account, a default image is used.&#10;- When the user edits its profile, checks if an image has been uploaded and updates/delete the other image when needed.">
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_08_10_193101_creates_profile_user_pivot_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProfilesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProfilesController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Profile.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/posts/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/posts/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/ExampleComponent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/FollowButton.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/profiles/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/profiles/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -195,7 +201,7 @@
       <workItem from="1596725027682" duration="751000" />
       <workItem from="1596725828353" duration="1277000" />
       <workItem from="1596727141225" duration="4582000" />
-      <workItem from="1596745221092" duration="21913000" />
+      <workItem from="1596745221092" duration="26840000" />
     </task>
     <task id="LOCAL-00001" summary="feat: Login page mockup&#10;&#10;Also added and integrated username attribute to the database in home, app, user model and migration">
       <created>1596810506645</created>
@@ -281,7 +287,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597076880964</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="feat: Profile image update&#10;&#10;- When a user creates a new account, a default image is used.&#10;- When the user edits its profile, checks if an image has been uploaded and updates/delete the other image when needed.">
+      <created>1597083589288</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1597083589288</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -312,7 +325,8 @@
     <MESSAGE value="feat: Edit Profile page&#10;&#10;- added authorised protection to edit profile&#10;- added autofilling of fields from current profile data" />
     <MESSAGE value="feat: Profile policy&#10;&#10;Only a registered user can make changes to his own profile and add posts on his own page" />
     <MESSAGE value="feat: Profile image&#10;&#10;- Changed the profile image to be the one that is updated by the user in index as well as in posts by that user" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: Profile image&#10;&#10;- Changed the profile image to be the one that is updated by the user in index as well as in posts by that user" />
+    <MESSAGE value="feat: Profile image update&#10;&#10;- When a user creates a new account, a default image is used.&#10;- When the user edits its profile, checks if an image has been uploaded and updates/delete the other image when needed." />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: Profile image update&#10;&#10;- When a user creates a new account, a default image is used.&#10;- When the user edits its profile, checks if an image has been uploaded and updates/delete the other image when needed." />
   </component>
   <component name="WindowStateProjectService">
     <state x="373" y="170" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1597074815668">
@@ -335,13 +349,21 @@
       <screen x="0" y="25" width="1280" height="775" />
     </state>
     <state x="446" y="331" width="378" height="170" key="VCS.ChangelistChooser/0.25.1280.775@0.25.1280.775" timestamp="1597074758492" />
-    <state x="235" y="148" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1597076882051">
+    <state x="235" y="148" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1597083591301">
       <screen x="0" y="25" width="1280" height="775" />
     </state>
-    <state x="235" y="148" width="800" height="535" key="Vcs.Push.Dialog.v2/0.25.1280.775@0.25.1280.775" timestamp="1597076882051" />
-    <state x="303" y="121" width="672" height="678" key="search.everywhere.popup" timestamp="1597083323187">
+    <state x="235" y="148" width="800" height="535" key="Vcs.Push.Dialog.v2/0.25.1280.775@0.25.1280.775" timestamp="1597083591301" />
+    <state x="338" y="161" width="604" height="502" key="find.popup" timestamp="1597089255287">
       <screen x="0" y="25" width="1280" height="775" />
     </state>
-    <state x="303" y="121" width="672" height="678" key="search.everywhere.popup/0.25.1280.775@0.25.1280.775" timestamp="1597083323187" />
+    <state x="338" y="161" width="604" height="502" key="find.popup/0.25.1280.775@0.25.1280.775" timestamp="1597089255287" />
+    <state x="304" y="181" key="run.anything.popup" timestamp="1597090485241">
+      <screen x="0" y="25" width="1280" height="775" />
+    </state>
+    <state x="304" y="181" key="run.anything.popup/0.25.1280.775@0.25.1280.775" timestamp="1597090485241" />
+    <state x="303" y="121" width="672" height="678" key="search.everywhere.popup" timestamp="1597089717018">
+      <screen x="0" y="25" width="1280" height="775" />
+    </state>
+    <state x="303" y="121" width="672" height="678" key="search.everywhere.popup/0.25.1280.775@0.25.1280.775" timestamp="1597089717018" />
   </component>
 </project>
