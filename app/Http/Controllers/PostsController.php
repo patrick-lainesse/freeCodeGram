@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Post;
 use Illuminate\Http\Request;
 use Intervention\Image\Facades\Image;
 
@@ -12,6 +13,19 @@ class PostsController extends Controller
     {
         $this->middleware('auth');
     }
+
+    // Displays posts made by followed profiles in decreasing order
+    public function index()
+    {
+        // We connect to users we are following through their profile, but the posts are associated to users, not profiles
+        $users = auth()->user()->following()->pluck('profiles.user_id');
+
+        //$posts = Post::whereIn('user_id', $users)->orderBy('created_at', 'DESC')->get();
+        $posts = Post::whereIn('user_id', $users)->latest()->get();
+
+        return view('posts.index', compact('posts'));
+    }
+
     public function create()
     {
         return view('posts.create');

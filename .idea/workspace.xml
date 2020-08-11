@@ -19,21 +19,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3696122a-efb7-4270-9655-19cfb6f883b5" name="Default Changelist" comment="feat: Follow Controller&#10;&#10;- Added FollowButton.vue to pass parameters&#10;- Linked Profile to User in a many-many relationship&#10;- Added security to disable following for non connected users">
-      <change afterPath="$PROJECT_DIR$/app/Providers/TelescopeServiceProvider.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/telescope.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/vendor/telescope/app-dark.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/vendor/telescope/app.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/vendor/telescope/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/vendor/telescope/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/vendor/telescope/mix-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/freeCodeGram.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/freeCodeGram.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+    <list default="true" id="3696122a-efb7-4270-9655-19cfb6f883b5" name="Default Changelist" comment="feat: Telescope installation&#10;&#10;Also added a tracking of number of followers and followings on the profile page.">
+      <change afterPath="$PROJECT_DIR$/resources/views/posts/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/profiles/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/profiles/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PostsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PostsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -170,7 +161,7 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/storage/profile" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/posts" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -185,9 +176,9 @@
       <recent name="$PROJECT_DIR$/resources/views/profiles" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/views/posts" />
       <recent name="$PROJECT_DIR$/public/storage/profile" />
       <recent name="$PROJECT_DIR$/resources/views/profiles" />
-      <recent name="$PROJECT_DIR$/resources/views/posts" />
       <recent name="$PROJECT_DIR$/public/svg" />
     </key>
   </component>
@@ -208,7 +199,7 @@
       <workItem from="1596725027682" duration="751000" />
       <workItem from="1596725828353" duration="1277000" />
       <workItem from="1596727141225" duration="4582000" />
-      <workItem from="1596745221092" duration="27723000" />
+      <workItem from="1596745221092" duration="28937000" />
     </task>
     <task id="LOCAL-00001" summary="feat: Login page mockup&#10;&#10;Also added and integrated username attribute to the database in home, app, user model and migration">
       <created>1596810506645</created>
@@ -308,7 +299,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597091145207</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="feat: Telescope installation&#10;&#10;Also added a tracking of number of followers and followings on the profile page.">
+      <created>1597154461719</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1597154461719</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -341,7 +339,8 @@
     <MESSAGE value="feat: Profile image&#10;&#10;- Changed the profile image to be the one that is updated by the user in index as well as in posts by that user" />
     <MESSAGE value="feat: Profile image update&#10;&#10;- When a user creates a new account, a default image is used.&#10;- When the user edits its profile, checks if an image has been uploaded and updates/delete the other image when needed." />
     <MESSAGE value="feat: Follow Controller&#10;&#10;- Added FollowButton.vue to pass parameters&#10;- Linked Profile to User in a many-many relationship&#10;- Added security to disable following for non connected users" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: Follow Controller&#10;&#10;- Added FollowButton.vue to pass parameters&#10;- Linked Profile to User in a many-many relationship&#10;- Added security to disable following for non connected users" />
+    <MESSAGE value="feat: Telescope installation&#10;&#10;Also added a tracking of number of followers and followings on the profile page." />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: Telescope installation&#10;&#10;Also added a tracking of number of followers and followings on the profile page." />
   </component>
   <component name="WindowStateProjectService">
     <state x="373" y="170" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1597074815668">
@@ -364,21 +363,21 @@
       <screen x="0" y="25" width="1280" height="775" />
     </state>
     <state x="446" y="331" width="378" height="170" key="VCS.ChangelistChooser/0.25.1280.775@0.25.1280.775" timestamp="1597074758492" />
-    <state x="235" y="148" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1597091149581">
+    <state x="235" y="148" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1597154464322">
       <screen x="0" y="25" width="1280" height="775" />
     </state>
-    <state x="235" y="148" width="800" height="535" key="Vcs.Push.Dialog.v2/0.25.1280.775@0.25.1280.775" timestamp="1597091149581" />
+    <state x="235" y="148" width="800" height="535" key="Vcs.Push.Dialog.v2/0.25.1280.775@0.25.1280.775" timestamp="1597154464322" />
     <state x="338" y="161" width="604" height="502" key="find.popup" timestamp="1597089255287">
       <screen x="0" y="25" width="1280" height="775" />
     </state>
     <state x="338" y="161" width="604" height="502" key="find.popup/0.25.1280.775@0.25.1280.775" timestamp="1597089255287" />
-    <state x="304" y="181" key="run.anything.popup" timestamp="1597090485241">
+    <state x="304" y="181" width="672" height="677" key="run.anything.popup" timestamp="1597155343448">
       <screen x="0" y="25" width="1280" height="775" />
     </state>
-    <state x="304" y="181" key="run.anything.popup/0.25.1280.775@0.25.1280.775" timestamp="1597090485241" />
-    <state x="303" y="121" width="672" height="678" key="search.everywhere.popup" timestamp="1597153925527">
+    <state x="304" y="181" width="672" height="677" key="run.anything.popup/0.25.1280.775@0.25.1280.775" timestamp="1597155343448" />
+    <state x="303" y="121" width="672" height="678" key="search.everywhere.popup" timestamp="1597155090334">
       <screen x="0" y="25" width="1280" height="775" />
     </state>
-    <state x="303" y="121" width="672" height="678" key="search.everywhere.popup/0.25.1280.775@0.25.1280.775" timestamp="1597153925527" />
+    <state x="303" y="121" width="672" height="678" key="search.everywhere.popup/0.25.1280.775@0.25.1280.775" timestamp="1597155090334" />
   </component>
 </project>
