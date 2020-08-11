@@ -24,5 +24,12 @@
                 </div>
             </div>
         @endforeach
+
+            <div class="row">
+                <div class="col-12 d-flex justify-content-center">
+                    {{--link for next page linked to PostsController paginate(5) command--}}
+                    {{ $posts->links() }}
+                </div>
+            </div>
     </div>
 @endsection

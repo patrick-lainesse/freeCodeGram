@@ -14,14 +14,14 @@ class PostsController extends Controller
         $this->middleware('auth');
     }
 
-    // Displays posts made by followed profiles in decreasing order
+    // Displays posts made by followed profiles in decreasing order, 5 per page
     public function index()
     {
         // We connect to users we are following through their profile, but the posts are associated to users, not profiles
         $users = auth()->user()->following()->pluck('profiles.user_id');
 
         //$posts = Post::whereIn('user_id', $users)->orderBy('created_at', 'DESC')->get();
-        $posts = Post::whereIn('user_id', $users)->latest()->get();
+        $posts = Post::whereIn('user_id', $users)->latest()->paginate(5);
 
         return view('posts.index', compact('posts'));
     }
