@@ -19,11 +19,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3696122a-efb7-4270-9655-19cfb6f883b5" name="Default Changelist" comment="feat: Pagination&#10;&#10;Recent posts in homepage are now displaying 5 per page, with pagination at the bottom.">
+    <list default="true" id="3696122a-efb7-4270-9655-19cfb6f883b5" name="Default Changelist" comment="feat: Caching profile variables in profile">
+      <change afterPath="$PROJECT_DIR$/app/Mail/NewUserWelcomeMail.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/emails/welcome-email.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PostsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PostsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProfilesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProfilesController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/profiles/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/profiles/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -198,7 +200,7 @@
       <workItem from="1596725027682" duration="751000" />
       <workItem from="1596725828353" duration="1277000" />
       <workItem from="1596727141225" duration="4582000" />
-      <workItem from="1596745221092" duration="31343000" />
+      <workItem from="1596745221092" duration="32761000" />
     </task>
     <task id="LOCAL-00001" summary="feat: Login page mockup&#10;&#10;Also added and integrated username attribute to the database in home, app, user model and migration">
       <created>1596810506645</created>
@@ -319,7 +321,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597156122777</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="feat: Caching profile variables in profile">
+      <created>1597161768228</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1597161768228</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -355,7 +364,8 @@
     <MESSAGE value="feat: Telescope installation&#10;&#10;Also added a tracking of number of followers and followings on the profile page." />
     <MESSAGE value="feat: Login redirection&#10;&#10;Logging in now redirects to a home page where all the posts from posters the user is following are displayed in descending order." />
     <MESSAGE value="feat: Pagination&#10;&#10;Recent posts in homepage are now displaying 5 per page, with pagination at the bottom." />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: Pagination&#10;&#10;Recent posts in homepage are now displaying 5 per page, with pagination at the bottom." />
+    <MESSAGE value="feat: Caching profile variables in profile" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: Caching profile variables in profile" />
   </component>
   <component name="WindowStateProjectService">
     <state x="373" y="170" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1597074815668">
@@ -378,10 +388,10 @@
       <screen x="0" y="25" width="1280" height="775" />
     </state>
     <state x="446" y="331" width="378" height="170" key="VCS.ChangelistChooser/0.25.1280.775@0.25.1280.775" timestamp="1597074758492" />
-    <state x="235" y="148" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1597156124510">
+    <state x="235" y="148" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1597161770184">
       <screen x="0" y="25" width="1280" height="775" />
     </state>
-    <state x="235" y="148" width="800" height="535" key="Vcs.Push.Dialog.v2/0.25.1280.775@0.25.1280.775" timestamp="1597156124510" />
+    <state x="235" y="148" width="800" height="535" key="Vcs.Push.Dialog.v2/0.25.1280.775@0.25.1280.775" timestamp="1597161770184" />
     <state x="338" y="161" width="604" height="502" key="find.popup" timestamp="1597089255287">
       <screen x="0" y="25" width="1280" height="775" />
     </state>
@@ -390,9 +400,9 @@
       <screen x="0" y="25" width="1280" height="775" />
     </state>
     <state x="304" y="181" width="672" height="677" key="run.anything.popup/0.25.1280.775@0.25.1280.775" timestamp="1597155343448" />
-    <state x="303" y="121" width="672" height="678" key="search.everywhere.popup" timestamp="1597160775557">
+    <state x="303" y="121" width="672" height="678" key="search.everywhere.popup" timestamp="1597169778484">
       <screen x="0" y="25" width="1280" height="775" />
     </state>
-    <state x="303" y="121" width="672" height="678" key="search.everywhere.popup/0.25.1280.775@0.25.1280.775" timestamp="1597160775557" />
+    <state x="303" y="121" width="672" height="678" key="search.everywhere.popup/0.25.1280.775@0.25.1280.775" timestamp="1597169778484" />
   </component>
 </project>

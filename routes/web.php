@@ -15,6 +15,11 @@ use Illuminate\Support\Facades\Route;
 
 Auth::routes();
 
+// Tempory route to test welcome email
+Route::get('/email', function () {
+    return new \App\Mail\NewUserWelcomeMail();
+});
+
 Route::post('follow/{user}', 'FollowsController@store');
 
 /*Need to be careful with the order you put your route: /p/{post} cancels /p/create if placed before*/
