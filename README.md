@@ -1,3 +1,12 @@
+#freeCodeGram
+
+Laravel introduction project, following the YouTube guide found here: https://www.youtube.com/watch?v=ImtZ5yENzgE
+Author's GitHub repo for this project: https://github.com/coderstape/freeCodeGram
+
+Below is the original Readme file.
+
+<hr>
+
 <p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
 
 <p align="center">
