@@ -19,10 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3696122a-efb7-4270-9655-19cfb6f883b5" name="Default Changelist" comment="feat: Login redirection&#10;&#10;Logging in now redirects to a home page where all the posts from posters the user is following are displayed in descending order.">
+    <list default="true" id="3696122a-efb7-4270-9655-19cfb6f883b5" name="Default Changelist" comment="feat: Pagination&#10;&#10;Recent posts in homepage are now displaying 5 per page, with pagination at the bottom.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PostsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PostsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/posts/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/posts/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProfilesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProfilesController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/profiles/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/profiles/index.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -197,7 +198,7 @@
       <workItem from="1596725027682" duration="751000" />
       <workItem from="1596725828353" duration="1277000" />
       <workItem from="1596727141225" duration="4582000" />
-      <workItem from="1596745221092" duration="29397000" />
+      <workItem from="1596745221092" duration="31343000" />
     </task>
     <task id="LOCAL-00001" summary="feat: Login page mockup&#10;&#10;Also added and integrated username attribute to the database in home, app, user model and migration">
       <created>1596810506645</created>
@@ -311,7 +312,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597155876726</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="feat: Pagination&#10;&#10;Recent posts in homepage are now displaying 5 per page, with pagination at the bottom.">
+      <created>1597156122777</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1597156122777</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -346,7 +354,8 @@
     <MESSAGE value="feat: Follow Controller&#10;&#10;- Added FollowButton.vue to pass parameters&#10;- Linked Profile to User in a many-many relationship&#10;- Added security to disable following for non connected users" />
     <MESSAGE value="feat: Telescope installation&#10;&#10;Also added a tracking of number of followers and followings on the profile page." />
     <MESSAGE value="feat: Login redirection&#10;&#10;Logging in now redirects to a home page where all the posts from posters the user is following are displayed in descending order." />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: Login redirection&#10;&#10;Logging in now redirects to a home page where all the posts from posters the user is following are displayed in descending order." />
+    <MESSAGE value="feat: Pagination&#10;&#10;Recent posts in homepage are now displaying 5 per page, with pagination at the bottom." />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: Pagination&#10;&#10;Recent posts in homepage are now displaying 5 per page, with pagination at the bottom." />
   </component>
   <component name="WindowStateProjectService">
     <state x="373" y="170" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1597074815668">
@@ -369,10 +378,10 @@
       <screen x="0" y="25" width="1280" height="775" />
     </state>
     <state x="446" y="331" width="378" height="170" key="VCS.ChangelistChooser/0.25.1280.775@0.25.1280.775" timestamp="1597074758492" />
-    <state x="235" y="148" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1597155877512">
+    <state x="235" y="148" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1597156124510">
       <screen x="0" y="25" width="1280" height="775" />
     </state>
-    <state x="235" y="148" width="800" height="535" key="Vcs.Push.Dialog.v2/0.25.1280.775@0.25.1280.775" timestamp="1597155877512" />
+    <state x="235" y="148" width="800" height="535" key="Vcs.Push.Dialog.v2/0.25.1280.775@0.25.1280.775" timestamp="1597156124510" />
     <state x="338" y="161" width="604" height="502" key="find.popup" timestamp="1597089255287">
       <screen x="0" y="25" width="1280" height="775" />
     </state>
@@ -381,9 +390,9 @@
       <screen x="0" y="25" width="1280" height="775" />
     </state>
     <state x="304" y="181" width="672" height="677" key="run.anything.popup/0.25.1280.775@0.25.1280.775" timestamp="1597155343448" />
-    <state x="303" y="121" width="672" height="678" key="search.everywhere.popup" timestamp="1597155090334">
+    <state x="303" y="121" width="672" height="678" key="search.everywhere.popup" timestamp="1597160775557">
       <screen x="0" y="25" width="1280" height="775" />
     </state>
-    <state x="303" y="121" width="672" height="678" key="search.everywhere.popup/0.25.1280.775@0.25.1280.775" timestamp="1597155090334" />
+    <state x="303" y="121" width="672" height="678" key="search.everywhere.popup/0.25.1280.775@0.25.1280.775" timestamp="1597160775557" />
   </component>
 </project>

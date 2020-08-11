@@ -20,8 +20,9 @@ class PostsController extends Controller
         // We connect to users we are following through their profile, but the posts are associated to users, not profiles
         $users = auth()->user()->following()->pluck('profiles.user_id');
 
+        // with('user') refers to Post model user, and is there to optimize queries to the database (which shows with a limit 1 on Telescope)
         //$posts = Post::whereIn('user_id', $users)->orderBy('created_at', 'DESC')->get();
-        $posts = Post::whereIn('user_id', $users)->latest()->paginate(5);
+        $posts = Post::whereIn('user_id', $users)->with('user')->latest()->paginate(5);
 
         return view('posts.index', compact('posts'));
     }
