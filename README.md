@@ -1,6 +1,7 @@
 # freeCodeGram
 
 Laravel introduction project, following the YouTube guide found here: https://www.youtube.com/watch?v=ImtZ5yENzgE
+
 Author's GitHub repo for this project: https://github.com/coderstape/freeCodeGram
 
 Below is the original Readme file.
